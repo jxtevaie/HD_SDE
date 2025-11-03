@@ -1,6 +1,8 @@
 Basci Info of HD_SD programm in Maynooth, including evaluation, class lecture, excercise and so on.
 
 💯Evaluation
+  1. Semester 1:https://github.com/jxtevaie/HD_SDE/blob/main/Evaluation
+  2. Semester 2:
 
 1️⃣ CS210（Algorithm）
   1. array: copy array, insert array
