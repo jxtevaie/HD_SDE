@@ -23,9 +23,9 @@ function writeNumberAsWords(n) {
 }
 
 // Parent component - App
-// 1. We create searchTerm using useState hook
-// 2. We obtain what user put in the search box each time using onSearchFormChange function
-// 3. We show the instruction text to users
+// 1. create searchTerm using useState hook
+// 2. obtain what user put in the search box each time using onSearchFormChange function
+// 3. use props to pass the array and searchTerm to child component
 function App() {
  
   const [searchTerm, setSearchTerm] = useState("");  
@@ -44,7 +44,7 @@ function App() {
         <input onChange={onSearchFormChange} type="text" />  //this is where user input searchTerm
       </form>
       <hr />
-      <ResultsComponent
+      <ResultsComponent   //props to pass array and searchTerm to the child component
         searchTermFromParent={searchTerm}
         spotifyArrayFromParent={spotify2023}
       />
