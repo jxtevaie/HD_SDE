@@ -4,11 +4,10 @@ import React, { useState } from "react";
 import { spotify2023 } from "./spotify2023";
 
 // Writing our own functions for use in our app
-// Writing a comment about a specific number.
 function writeNumberAsWords(n) {
-  let nAsStr = n.toString(10); // our number is in base 10
+  let nAsStr = n.toString(10); // convert the number to a String
   let digits = nAsStr.length; // number of digits
-  let firstDigit = nAsStr.charAt(0);
+  let firstDigit = nAsStr.charAt(0); // first digit of the number
 
   let message = "nothing";
   if (digits === 9) {
@@ -79,7 +78,7 @@ function ResultsComponent(props) {
     <>
       <h1>Child Component: Search Results</h1>
       <h2>There are {numberResults} search results </h2>
-      // show different text for different amount of results
+      // conditional rendering: show different text for different amount of results
       {numberResults === 0 && <p>No results</p>}
       {numberResults > 0 && numberResults < 10 && <p>Some results, not many</p>}
       {numberResults > 10 && <p>Lots of results</p>}
